@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Travel decision making tool</title>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!--<canvas id="canvas-id" width="250" height="250"></canvas>-->
+
+  <input id="inputprice" type="text">
+  <p id="labelprice">Price of the flight (£)</p>
+  <input id="inputtime" type="text">
+  <p id="labeltime">Length of the flight (hours)</p>
+  <div>
+    <button type="button" id="newflight">Add Flight</button>
+    <button type="button" onclick="removeFlight()">Remove Flight</button>
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Choose airport
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Gatwick</a>
+      <a class="dropdown-item" href="#">Heathrow</a>
+      <a class="dropdown-item" href="#">London City</a>
+      <a class="dropdown-item" href="#">Luton</a>
+      <a class="dropdown-item" href="#">Stansted</a>
+    </div>
+  </div>
+
+
+
+
+  <!--<button onclick="draw()">Move</button>-->
+  <!--<button onclick="reset()">Reset</button> -->
+</body>
+
+</html>
