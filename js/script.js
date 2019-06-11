@@ -58,40 +58,40 @@ $(document).ready(function onReady() {
     circles.enter()
       .append("circle")
       .attr("cx", function(d) {
-        return x(d.price) //(d.price - 50) * 4;
+        return x(d.price);
       }) // X coordinate: 1st element of each object in the dataset
       .attr("cy", function(d) {
         return y(d.time);
       }) // Y coordinate: 2nd element of each object in the dataset
       .attr("r", radius) // circle radius
-      .attr("fill", "green");
+      .attr("fill", "white");
 
     //update all circles to new positions
     circles.transition()
         .duration(500)
         .attr("cx", function(d) {
-          return x(d.price) //(d.price - 50) * 4;
+          return x(d.price);
         }) // X coordinate: 1st element of each object in the dataset
         .attr("cy", function(d) {
           return y(d.time);
         }) // Y coordinate: 2nd element of each object in the dataset
 
-    dataGroup.selectAll("text")
-      .data(dataset)
-      .enter()
-      .append("text")
-      .text(function(d) {
-        return "Airport"; // replace with var returned by inputs
-      })
-      .attr("x", function(d) {
-        return x(d.price) + radius + 1//(d.price - 50) * 4 + 6;
-      })
-      .attr("y", function(d) {
-        return y(d.time) //h - ((d.time - 1) * 200) + 1;
-      })
-      .attr("font-family", "sans-serif")
-      .attr("font-size", "12px")
-      .attr("fill", "blue");
+    // dataGroup.selectAll("text")
+    //   .data(dataset)
+    //   .enter()
+    //   .append("text")
+    //   .text(function(d) {
+    //     return "Airport"; // replace with var returned by inputs
+    //   })
+    //   .attr("x", function(d) {
+    //     return x(d.price) + radius + 1;
+    //   })
+    //   .attr("y", function(d) {
+    //     return y(d.time);
+    //   })
+    //   .attr("font-family", "sans-serif")
+    //   .attr("font-size", "12px")
+    //   .attr("fill", "blue");
     console.log("SVG updated");
 
     axesGroup.append("g") // modify as the x axis

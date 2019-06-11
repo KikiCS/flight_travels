@@ -2,3 +2,15 @@
   color: blue;
 }
 */
+body {
+  background-color: #61D5CA;
+}
+h1{
+  font-family: 'Marmelad', sans-serif;
+  color: white;
+  font-size: 50px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
